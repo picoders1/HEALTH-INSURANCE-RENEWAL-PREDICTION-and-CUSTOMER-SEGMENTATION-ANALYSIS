@@ -95,4 +95,4 @@ Model Accuracy Measures :
 3. Customer segmentation provided further insights into the business which would provide a targeted marketing  approach.
 4. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
 
-# THANK YOU!!!
+# Thank You!!!
