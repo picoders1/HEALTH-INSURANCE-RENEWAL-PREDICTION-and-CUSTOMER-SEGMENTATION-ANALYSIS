@@ -6,8 +6,8 @@
 To be financially stable is everyone’s dream. However, the rise in medical costs and treatment for illness can strain your savings. Health insurance helps lessen the costs of medical expenses in the event of an illness or accident and for preventive medicine such as routine medical tests, check-ups, and screening tests. Cashless treatment, Pre and post-hospitalization cost coverage, Transportation facility, No Claim Bonus (NCB), Medical checkup, Room rent, and Tax benefits are the main benefits. Health insurance is typically offered as one to three years  long contracts and required a renewal based on the chosen plan.
 
 # Objectives:
-a. The objective is to predict insurance policy renewals for existing customers using predictive modeling.
-b. To segment existing customers for better targeting through focused marketing strategies.
+1. The objective is to predict insurance policy renewals for existing customers using predictive modeling.
+2. To segment existing customers for better targeting through focused marketing strategies.
 
 
 # 2. Technical Stacks
@@ -37,62 +37,62 @@ The first step in data understanding is Data Collection. The feature set used in
 
 # 5. Exploratory Data Analysis(EDA)
 
-a. Data Cleansing is a primary process that needs to be worked on after data collection.
-b. We have performed outlier treatment on features that had outliers, as outliers were affecting the mean values.
-c. Dummy variables were also created for categorical variables using Label Encoding.
-d. We have also performed Standardization of data.
-e. Business Moments Decisions and graphical interpretation of data are performed before and after data cleansing to analyze the statistics of the data
-f. Visualization of univariate and bivariate plots was done in Python and Tableau.
+1. Data Cleansing is a primary process that needs to be worked on after data collection.
+2. We have performed outlier treatment on features that had outliers, as outliers were affecting the mean values.
+3. Dummy variables were also created for categorical variables using Label Encoding.
+4. We have also performed Standardization of data.
+5. Business Moments Decisions and graphical interpretation of data are performed before and after data cleansing to analyze the statistics of the data
+6. Visualization of univariate and bivariate plots was done in Python and Tableau.
 
 
 # 6. Model Building 
 
 # Classification Algorithms: 
-a. Shallow Model(KNN, Naive Bayes, Decision Tree) \n
-b. Ensemble Model(Random Forest) \n
-c. Regression Model(Logistic Regression) \n
+1. Shallow Model(KNN, Naive Bayes, Decision Tree) \n
+2. Ensemble Model(Random Forest) \n
+3. Regression Model(Logistic Regression) \n
 
 # Algorithms Used
-a. Support Vector Machine(SVM) \n
-b.Artificial Neural Network(ANN) \n
+1. Support Vector Machine(SVM) \n
+2.Artificial Neural Network(ANN) \n
 
 # Model Segmentation
-a. Hierarchical Clustering \n
-b. Density-Based Clustering of Application with Noise \n
-c. K-Means Clustering \n
+1. Hierarchical Clustering \n
+2. Density-Based Clustering of Application with Noise \n
+3. K-Means Clustering \n
 
 
 # 7. Model Evaluation
 
 Model Hyper-parameters used:
-a. Cross Validation \n
-b. GridSearchCV \n
-c. RandomSearchCV \n
+1. Cross Validation \n
+2. GridSearchCV \n
+3. RandomSearchCV \n
 
 Model Accuracy Measures :
-a. Confusion matrix \n
-b. Accuracy \n
-c. F1 score \n
-d. ROC (Receiver Operating Characteristics) curve & AUC (Area Under Curve) \n
+1. Confusion matrix \n
+2. Accuracy \n
+3. F1 score \n
+4. ROC (Receiver Operating Characteristics) curve & AUC (Area Under Curve) \n
 
 
 # 8. Deployment Strategy
 
-a. Flask : 
-1. Flask is a micro-framework for building web applications in Python. It began as a simple wrapper around Wekzeug(WSGI protocol) and Jinja and has become     
-   the most popular Python web application Framework.
-2. Flask and Green-unicorn module must be installed in the project environment using “pip install flask gunicorn”
-3. Gunicorn is a Python WSGI HTTPS Server that uses a worker model.
+1. Flask : 
+1.1. Flask is a micro-framework for building web applications in Python. It began as a simple wrapper around Wekzeug(WSGI protocol) and Jinja and has become    
+     the most popular Python web application Framework.
+1.2. Flask and Green-unicorn module must be installed in the project environment using “pip install flask gunicorn”
+1.3. Gunicorn is a Python WSGI HTTPS Server that uses a worker model.
 
-b. Heroku :
-Heroku is a cloud platform as a service (PaaS) supporting several programming languages.
+2. Heroku :
+2.1 Heroku is a cloud platform as a service (PaaS) supporting several programming languages.
 
 
 # 9. Conclusion
 
-a. This project is an exploratory attempt to understand the factors, which affect renewal decisions in the health insurance market.
-b. The prediction model helped us to figure out features that contributed more to the renewal of health insurance policies.
-c. Customer segmentation provided further insights into the business which would provide a targeted marketing  approach.
-d. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
+1. This project is an exploratory attempt to understand the factors, which affect renewal decisions in the health insurance market.
+2. The prediction model helped us to figure out features that contributed more to the renewal of health insurance policies.
+3. Customer segmentation provided further insights into the business which would provide a targeted marketing  approach.
+4. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
 
 # THANK YOU!!!
