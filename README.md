@@ -3,10 +3,11 @@
 
 # 1. Medical Insurance
 
-To be financially stable is everyone’s dream. However, the rise in medical costs and treatment for illness can strain your savings. Health insurance helps lessen the costs of medical expenses in the event of an illness or accident and for preventive medicine such as routine medical tests, check-ups, and screening tests
-Cashless treatment, Pre and post-hospitalization cost coverage, Transportation facility, No Claim Bonus (NCB), Medical checkup, Room rent, and Tax benefits are the main benefits. Health insurance is typically offered as one to three years  long contracts and required a renewal based on the chosen plan.
+To be financially stable is everyone’s dream. However, the rise in medical costs and treatment for illness can strain your savings. Health insurance helps lessen the costs of medical expenses in the event of an illness or accident and for preventive medicine such as routine medical tests, check-ups, and screening tests. Cashless treatment, Pre and post-hospitalization cost coverage, Transportation facility, No Claim Bonus (NCB), Medical checkup, Room rent, and Tax benefits are the main benefits. Health insurance is typically offered as one to three years  long contracts and required a renewal based on the chosen plan.
 
-![image](https://github.com/picoders1/HEALTH-INSURANCE-RENEWAL-PREDICTION-and-CUSTOMER-SEGMENTATION-ANALYSIS/assets/87698874/6774cae6-c3db-4803-a2f3-874100fa2a43)
+# Objectives:
+a. The objective is to predict insurance policy renewals for existing customers using predictive modeling.
+b. To segment existing customers for better targeting through focused marketing strategies.
 
 
 # 2. Technical Stacks
@@ -93,6 +94,8 @@ a. This project is an exploratory attempt to understand the factors, which affec
 b. The prediction model helped us to figure out features that contributed more to the renewal of health insurance policies.
 c. Customer segmentation provided further insights into the business which would provide a targeted marketing  approach.
 d. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
+
+# THANK YOU!!
 
 
 
