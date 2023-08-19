@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/style.css') }}">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="static/img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class=""><a href="prediction.html">Prediction</a></li>
+                <!-- <li class=""><a href="#about">About</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+              <img src="static/img/logo.png" class="img-responsive">
+            </div>
+            <div class="banner-text text-center">
+              <h1 class="white">Medical Insurance Renewal Prediction</h1>
+            </div>
+            <div class="banner-text text-center">
+            <h1 class="white">{{ prediction_text }}</h1>
+          </div>
+            <div class="overlay-detail text-center">
+              <a href="#predict"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  <!-- predict
+  <section id="predict" class="section-padding">
+    <form action="{{ url_for('predict')}}"method="post">
+        <div class="text-center">
+        <p><label title="Male/ Female" for="sex">Sex: </label>
+        <select name="sex" id="sex">
+          <option value="1">Male</option>
+          <option value="0">Female</option></select></p>
+        <p><label title="Age of Customer" for="age">Age: </label><input type="number" name="age" min = 18 max = 65 placeholder="Age between 18 and 65" required="required" /></p>
+        <p><label title="An integer indicating the number of children/dependents covered by the insurance plan" for="children">Children:  </label>
+            <select name="children" id="children">
+                <option value=0>0</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select></p>
+        <p><label title="A yes or no categorical variable that indicates whether the insured regularly smokes tobacco" for="smoker">Smoker:  </label>
+            <select name="smoker" id="smoker">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select></p>
+        <p><label title="The body mass index (BMI),  BMI is equal to weight (in kilograms) divided by height (in meters) squared. An ideal BMI is within the range of 18.5 to  24.9. " for="bmi">BMI: </label><input type="number" name="bmi" placeholder="bmi" required="required" /></p>
+        <p><label title="illiterate/ literate" for="education">Education:  </label>
+            <select name="education" id="education">
+                <option value="1">Literate</option>
+                <option value="0">Illiterate</option>
+            </select></p>
+        <p><label title="income also has slabs. We can focus on low and middle income areas 2.5 lac to 25 lac/annum" for="Income">Income (2.5lac-25lac): </label><input type="number" name="income" placeholder="Income" min = 250000 max = 2500000 required="required" /></p>
+        <p><label title="A policyholder's health insurance claim can get settled by an insurer in two ways: third-party administrators (TPA) and through the insurer's in-house claims processing department." for="Distinct_Parties_on_Claim">Distinct Parties on Claim:  </label>
+            <select name="Distinct_Parties_on_Claim" id="Distinct_Parties_on_Claim">
+                <option value="1">In-House</option>
+                <option value="0">TPA</option>
+            </select></p>
+        <p><label title="Individual/ Floater( 2 adults + 3 children) at max (in some cases parents also can be involved), senior citizens, critical illness" for="Type_of_insurance">Type of insurance: </label>
+            <select name="Type_of_insurance" id="Type_of_insurance">
+              <option value="0">Individual</option>
+              <option value="1">Floater</option>
+              <option value="2">Senior Citizen</option>
+              <option value="3">Critical Illness</option></select></p>
+      <p><label title="complete tenure of policy which the customer has taken" for="Policy_Length">Policy Length: </label>
+        <select name="Policy_Length" id="Policy_Length">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+        </select></p>
+        <p><label title="mode of claim " for="Claim_Type">Claim Type:  </label>
+            <select name="Claim_Type" id="Claim_Type">
+                <option value="1">Reimbursement</option>
+                <option value="0">Cashless</option>
+            </select></p>
+        <p><label title="offline/ online" for="Payment_method_">Payment Method:  </label>
+            <select name="Payment_method_" id="Payment_method_">
+                <option value="1">Offline</option>
+                <option value="0">Online</option>
+            </select></p>
+        <p><label title="number of underlying diseases or any other health issues that insured person has made while signing declaration form(BP, Diabetes, Thyroid, heart ailments, other health issues)" for="Number_of_declarations">Number of declaration: </label><input type="number" min = 0 maz = 5 name="Number_of_declarations" placeholder="Number of declaration(0-5)" required="required" /></p>            
+    <p><label title="Authorization before final claim is done" for="Number_of_authorizations_">Number of Authorizations : </label><input type="number" min=3 max= 30 name="Number_of_authorizations_" placeholder="Number of authorizations(3-30)" required="required" /></p>
+        <p><label title="Handling time of authorizations and declarations in days" for="Handling_time_of_authorizations_and_declarations_">Handling time of authorizations and declarations : </label>
+            <select name="Handling_time_of_authorizations_and_declarations_" id="Handling_time_of_authorizations_and_declarations_">
+                <option value=0>0</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+            </select></p> 
+        <p><label title="days remaining for completion of policy" for="Duration_of_current_insurance_contract">Duration of current insurance contract (365-545) days: </label><input type="number" name="Duration_of_current_insurance_contract" placeholder="Duration of insurance contract" min = 365 max = 545 required="required" /></p>
+        <p><label title="define the nature of contact. Last time the customer contacted with the company" for="Elapsed_time_since_last_contact_moment">Elapsed time since last contact moment (7-30) days: </label><input type="number" name="Elapsed_time_since_last_contact_moment" placeholder="Elapsed time" min = 7 max= 30 required="required" /></p>
+        <p><label title="A product is a discrete package of health insurance coverage benefits that are offered using a particular product network type (such as health maintenance organization, preferred provider organization, exclusive provider organization, point of service, or indemnity) within a service area." for="Product_usage_">Product Usage(0-100%): </label><input type="number" name="Product_usage_" min = 0 max= 100 placeholder="Total Product used" min = 0 max = 100 required="required" /></p>
+        <p><label title="num of days (maxm 15 days) nature of complaint need to be validated. first is unsettled claim, other is wrong sale pitch" for="Elapsed_time_since_the_last_complaint">Elapsed time since the last complaint(0-15) days: </label><input type="number" name="Elapsed_time_since_the_last_complaint" placeholder="Elapsed time" min = 0 max = 15 required="required" /></p>
+        <p><label title=" The time span after the purchase of the policy during which you cannot claim any benefit from the insurer is known as the waiting period in a health insurance policy. 30 to 90 days" for="Policy_Claim_Day_Diff">Policy Claim Day Diffirence (max.90) days : </label><input type="number" name="Policy_Claim_Day_Diff" placeholder="Policy Claim Day Diff" min = 0 max = 90 required="required" /></p>
+        <p><label title="num of claims made in past one year" for="Claim_History">Claim History: </label>
+            <select name="Claim_History" id="Claim_History">
+                <option value=0>0</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select></p>
+        <p><label title="num of renewals in the past" for="Renewal_History">Renewal History (max.10) days : </label><input type="number" name="Renewal_History" placeholder="Renewal History" min = 0 max = 10 required="required" /></p>
+        <p><label title="Customer Complaint(Yes/No)" for="Customer_Complaint">Customer Complaint:  </label>
+            <select name="Customer_Complaint" id="Customer_Complaint">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+            </select></p>
+        <p><label title="in past one year" for="Number_of_complaints">Number of complaints (max.10) : </label><input type="number" name="Number_of_complaints" placeholder="Number of complaints" min = 0 max = 10 required="required" /></p>
+        <p><label title="yes/no" for="Customer_mentioned_that_they_are_going_to_switch">Customer mentioned that they are going to switch:  </label>
+            <select name="Customer_mentioned_that_they_are_going_to_switch" id="Customer_mentioned_that_they_are_going_to_switch">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+            </select></p>
+        <p><label title="It occurs when your insurer (not your health care provider or pharmacist) forces you to switch from your current medication to a different (but not generic) drug by either refusing to cover your drug any longer or increasing the out-of-pocket cost of your drug. It can violate certain state consumer protection laws." for="Switching_barrier_">Switching barrier :  </label>
+            <select name="Switching_barrier_" id="Switching_barrier_">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+            </select></p> 
+        <p><label title="claims cancelled or not in past one year" for="Claim_Cancellation">Claim Cancellation :  </label>
+            <select name="Claim_Cancellation" id="Claim_Cancellation">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+            </select></p>             
+        <p><label title="How popular the brand is among its customers measured by rating given by every customer on scale 1-5" for="Brand_credibility_">Brand Credibility(1-5 star): </label>
+            <select name="Brand_credibility_" id="Brand_credibility_">
+                <option value=1>*</option>
+                <option value=2>**</option>
+                <option value=3>***</option>
+                <option value=4>****</option>
+                <option value=5>*****</option>
+            </select></p>  
+        <p><label title="after how many days claim is made after renewal. / num of claims made" for="Claim_After_Renewal">Claim After Renewal(0-5): </label>
+            <select name="Claim_After_Renewal" id="Claim_After_Renewal">
+                <option value=0>0</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=1>3</option>
+                <option value=2>4</option>
+                <option value=1>5</option>
+            </select></p>
+        <p><label title="issues of the customer resolved or not" for="Contracted_care_">Contracted care : </label>
+            <select name="Contracted_care_" id="Contracted_care_">
+                <option value="0">Not Applicable</option>
+                <option value="1">Resolved</option>
+                <option value="2">Not Resolved</option>
+            </select></p>
+        <p><label title="defines the nature of contact between customer and company " for="Experience_during_contact_moment">Experience during contact moment(1-5 star): </label>
+            <select name="Experience_during_contact_moment" id="Experience_during_contact_moment">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select></p>             
+        <p><label title="INR 300 to 2500 per month( for cover in then range 3lac- 25lac/annum)  premium per month is 0.1% of cover of policy" for="Premium_price_">Premium price (3K-48k) in Rs. : </label><input type="number" name="Premium_price_" placeholder="Premium price" required="required" min = 3000 max= 48000 /></p>        
+        <p><label title=" charges/penalty for paying late than the due date" for="Outstanding_charges">Outstanding Charges in Rs. : </label><input type="number" name="Outstanding_charges" placeholder="Outstanding charges" required="required" /></p>
+        <p><label title="Customers being offered discount on various factors" for="Discount">Discount :  </label>
+            <select name="Discount" id="Discount">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select></p> 
+        <p><label title=" The excess amount that is fixed by the insurer which the insured will bear in the claim amount. 6 types - compulsory deductible, voluntary, comprehensive(not in indian market), non comprehensive, cumulative(only on floater plan)" for="Deductible_excess_">Deductible Excess :  </label>
+            <select name="Deductible_excess_" id="Deductible_excess_">
+                <option value="0">Non-Payable</option>
+                <option value="1">Payable</option>
+            </select></p> 
+        <br>
+
+        <button type="submit" id="submit" class="btn btn-large">Predict</button>
+        <button type="reset" class="btn btn-large">Clear</button>
+        <br><br>
+      </div>    
+    </form>
+  </section> -->
+  <!--/ predict-->
+  <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <h2 class="ser-title">Renewal Prediction</h2><br>
+          <p>Prediction is a event that one wants to predict the future.
+            This distinction has given rise in the fields of research methods and
+          statistics and to the common statement that <b>"correlation does not imply causation."</b></p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="icon-info">
+              <h2>Segmentation</h2><br>
+              <p>Helps identify least and most profitable customers, thus helping the business to concentrate marketing activities on those most likely to buy your products or services.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="about-info">
+            <div class="icon-info">
+              <h2>Visualization</h2><br>
+              <p>Data visualization is an important skill in applied statistics and machine learning.
+                    Statistics does indeed focus on quantitative descriptions and estimations of data.it provides an important suite of tools for gaining a qualitative 
+                    understanding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ about-->
+  <!--cta-->
+  <section id="cta-2" class="section-padding">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-2"></div>
+        <div class="text-right-md col-md-4 col-sm-4">
+          <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          Person who is better at statistics than any software engineer and better at software engineering than any statistician.
+          <p class="text-right text-primary"><i>— Data Scientist</i></p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+  <!--cta-->
+  <!--footer-->
+  <footer id="footer">
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            © Copyright 360DigiTMG and © Copyrights 2021 Innodatatics
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/jquery.easing.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>
