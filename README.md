@@ -48,32 +48,32 @@ f. Visualization of univariate and bivariate plots was done in Python and Tablea
 # 6. Model Building 
 
 # Classification Algorithms: 
-a. Shallow Model(KNN, Naive Bayes, Decision Tree)
-b. Ensemble Model(Random Forest)
-c. Regression Model(Logistic Regression)
+a. Shallow Model(KNN, Naive Bayes, Decision Tree) \n
+b. Ensemble Model(Random Forest) \n
+c. Regression Model(Logistic Regression) \n
 
 # Algorithms Used
-a. Support Vector Machine(SVM)
-b.Artificial Neural Network(ANN)
+a. Support Vector Machine(SVM) \n
+b.Artificial Neural Network(ANN) \n
 
 # Model Segmentation
-a. Hierarchical Clustering
-b. Density-Based Clustering of Application with Noise
-c. K-Means Clustering
+a. Hierarchical Clustering \n
+b. Density-Based Clustering of Application with Noise \n
+c. K-Means Clustering \n
 
 
 # 7. Model Evaluation
 
 Model Hyper-parameters used:
-a. Cross Validation
-b. GridSearchCV
-c. RandomSearchCV
+a. Cross Validation \n
+b. GridSearchCV \n
+c. RandomSearchCV \n
 
 Model Accuracy Measures :
-a. Confusion matrix
-b. Accuracy
-c. F1 score
-d. ROC (Receiver Operating Characteristics) curve & AUC (Area Under Curve)
+a. Confusion matrix \n
+b. Accuracy \n
+c. F1 score \n
+d. ROC (Receiver Operating Characteristics) curve & AUC (Area Under Curve) \n
 
 
 # 8. Deployment Strategy
@@ -95,29 +95,4 @@ b. The prediction model helped us to figure out features that contributed more t
 c. Customer segmentation provided further insights into the business which would provide a targeted marketing  approach.
 d. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
 
-# THANK YOU!!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The objective is to predict insurance policy renewals for existing customers using predictive modeling. To segment existing customers for better targeting through focused marketing strategies &amp; Minimize fraudulent claims. 
+# THANK YOU!!!
