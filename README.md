@@ -32,7 +32,7 @@ Heroku: A tool used for Deploying the model.
 
 # 4. Data Understanding
 
-The first step in data understanding is Data Collection. The feature set used in this project was taken from the MySQL database, containing 42 features related to the health insurance renewal policy. The output variable for this project is “Renewal: Yes or No”, which is a discrete data type. So this project will focus on the classification machine learning algorithm
+The first step in data understanding is Data Collection. The feature set used in this project was taken from the MySQL database, containing 42 features related to the health insurance renewal policy. The output variable for this project is “Renewal: Yes or No”, which is a discrete data type. So this project will focus on the classification machine learning algorithm.
 
 
 # 5. Exploratory Data Analysis(EDA)
@@ -48,43 +48,43 @@ The first step in data understanding is Data Collection. The feature set used in
 # 6. Model Building 
 
 # Classification Algorithms: 
-1. Shallow Model(KNN, Naive Bayes, Decision Tree) \n
-2. Ensemble Model(Random Forest) \n
-3. Regression Model(Logistic Regression) \n
+1. Shallow Model(KNN, Naive Bayes, Decision Tree) 
+2. Ensemble Model(Random Forest) 
+3. Regression Model(Logistic Regression) 
 
 # Algorithms Used
-1. Support Vector Machine(SVM) \n
-2.Artificial Neural Network(ANN) \n
+1. Support Vector Machine(SVM) 
+2. Artificial Neural Network(ANN) 
 
 # Model Segmentation
-1. Hierarchical Clustering \n
-2. Density-Based Clustering of Application with Noise \n
-3. K-Means Clustering \n
+1. Hierarchical Clustering 
+2. Density-Based Clustering of Application with Noise 
+3. K-Means Clustering
 
 
 # 7. Model Evaluation
 
 Model Hyper-parameters used:
-1. Cross Validation \n
-2. GridSearchCV \n
-3. RandomSearchCV \n
+1. Cross Validation 
+2. GridSearchCV 
+3. RandomSearchCV 
 
 Model Accuracy Measures :
-1. Confusion matrix \n
-2. Accuracy \n
-3. F1 score \n
-4. ROC (Receiver Operating Characteristics) curve & AUC (Area Under Curve) \n
+1. Confusion matrix 
+2. Accuracy 
+3. F1 score 
+4. ROC (Receiver Operating Characteristics) curve & AUC (Area Under Curve) 
 
 
 # 8. Deployment Strategy
 
-1. Flask : 
-1.1. Flask is a micro-framework for building web applications in Python. It began as a simple wrapper around Wekzeug(WSGI protocol) and Jinja and has become    
-     the most popular Python web application Framework.
-1.2. Flask and Green-unicorn module must be installed in the project environment using “pip install flask gunicorn”
-1.3. Gunicorn is a Python WSGI HTTPS Server that uses a worker model.
+# 1. Flask : 
+1. Flask is a micro-framework for building web applications in Python. It began as a simple wrapper around Wekzeug(WSGI protocol) and Jinja and has become    
+   the most popular Python web application Framework.
+2. Flask and Green-unicorn module must be installed in the project environment using “pip install flask gunicorn”
+3. Gunicorn is a Python WSGI HTTPS Server that uses a worker model.
 
-2. Heroku :
+# 2. Heroku :
 2.1 Heroku is a cloud platform as a service (PaaS) supporting several programming languages.
 
 
