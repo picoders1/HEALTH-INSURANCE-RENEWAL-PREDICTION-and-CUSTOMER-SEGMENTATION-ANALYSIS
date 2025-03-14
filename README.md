@@ -1,16 +1,16 @@
 # HEALTH-INSURANCE-RENEWAL-PREDICTION-and-CUSTOMER-SEGMENTATION-ANALYSIS
 
 
-# 1. Medical Insurance
+## 1. Medical Insurance
 
 To be financially stable is everyone’s dream. However, the rise in medical costs and treatment for illness can strain your savings. Health insurance helps lessen the costs of medical expenses in the event of an illness or accident and for preventive medicine such as routine medical tests, check-ups, and screening tests. Cashless treatment, Pre and post-hospitalization cost coverage, Transportation facility, No Claim Bonus (NCB), Medical checkup, Room rent, and Tax benefits are the main benefits. Health insurance is typically offered as one to three years  long contracts and required a renewal based on the chosen plan.
 
-# Objectives:
+## Objectives:
 1. The objective is to predict insurance policy renewals for existing customers using predictive modeling.
 2. To segment existing customers for better targeting through focused marketing strategies.
 
 
-# 2. Technical Stacks
+## 2. Technical Stacks
 
 These are the Software, Tools, and Environments used in the project.
 
@@ -25,17 +25,17 @@ MySQL: A tool used for storing databases.
 Heroku: A tool used for Deploying the model.
 
 
-# 3. Project Architecture / Data Pipeline
+## 3. Project Architecture / Data Pipeline
 
 ![image](https://github.com/picoders1/HEALTH-INSURANCE-RENEWAL-PREDICTION-and-CUSTOMER-SEGMENTATION-ANALYSIS/assets/87698874/03fdd05e-d39a-4c71-be79-9f112aa4f452)
 
 
-# 4. Data Understanding
+## 4. Data Understanding
 
 The first step in data understanding is Data Collection. The feature set used in this project was taken from the MySQL database, containing 42 features related to the health insurance renewal policy. The output variable for this project is “Renewal: Yes or No”, which is a discrete data type. So this project will focus on the classification machine learning algorithm.
 
 
-# 5. Exploratory Data Analysis(EDA)
+## 5. Exploratory Data Analysis(EDA)
 
 1. Data Cleansing is a primary process that needs to be worked on after data collection.
 2. We have performed outlier treatment on features that had outliers, as outliers were affecting the mean values.
@@ -45,24 +45,24 @@ The first step in data understanding is Data Collection. The feature set used in
 6. Visualization of univariate and bivariate plots was done in Python and Tableau.
 
 
-# 6. Model Building 
+## 6. Model Building 
 
-# Classification Algorithms: 
+### Classification Algorithms: 
 1. Shallow Model(KNN, Naive Bayes, Decision Tree) 
 2. Ensemble Model(Random Forest) 
 3. Regression Model(Logistic Regression) 
 
-# Algorithms Used
+### Algorithms Used
 1. Support Vector Machine(SVM) 
 2. Artificial Neural Network(ANN) 
 
-# Model Segmentation
+### Model Segmentation
 1. Hierarchical Clustering 
 2. Density-Based Clustering of Application with Noise 
 3. K-Means Clustering
 
 
-# 7. Model Evaluation
+## 7. Model Evaluation
 
 Model Hyper-parameters used:
 1. Cross Validation 
@@ -76,7 +76,7 @@ Model Accuracy Measures :
 4. ROC (Receiver Operating Characteristics) curve & AUC (Area Under Curve) 
 
 
-# 8. Deployment Strategy
+## 8. Deployment Strategy
 
 1. Flask : 
 1. Flask is a micro-framework for building web applications in Python. It began as a simple wrapper around Wekzeug(WSGI protocol) and Jinja and has become    
@@ -88,7 +88,7 @@ Model Accuracy Measures :
 2.1 Heroku is a cloud platform as a service (PaaS) supporting several programming languages.
 
 
-# 9. Conclusion
+## 9. Conclusion
 
 1. This project is an exploratory attempt to understand the factors, which affect renewal decisions in the health insurance market.
 2. The prediction model helped us to figure out features that contributed more to the renewal of health insurance policies.
@@ -96,4 +96,4 @@ Model Accuracy Measures :
 4. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
 
 
-# Thank You!!
+## Thank You !!
