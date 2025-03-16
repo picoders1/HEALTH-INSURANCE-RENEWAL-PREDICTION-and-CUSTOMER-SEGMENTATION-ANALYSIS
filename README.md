@@ -1,6 +1,5 @@
 # HEALTH-INSURANCE-RENEWAL-PREDICTION-and-CUSTOMER-SEGMENTATION-ANALYSIS
 
-
 ## 1. Medical Insurance
 
 To be financially stable is everyone’s dream. However, the rise in medical costs and treatment for illness can strain your savings. Health insurance helps lessen the costs of medical expenses in the event of an illness or accident and for preventive medicine such as routine medical tests, check-ups, and screening tests. Cashless treatment, Pre and post-hospitalization cost coverage, Transportation facility, No Claim Bonus (NCB), Medical checkup, Room rent, and Tax benefits are the main benefits. Health insurance is typically offered as one to three years  long contracts and required a renewal based on the chosen plan.
@@ -96,4 +95,4 @@ Model Accuracy Measures :
 4. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
 
 
-## Thank You !!
+## Thank You!!
