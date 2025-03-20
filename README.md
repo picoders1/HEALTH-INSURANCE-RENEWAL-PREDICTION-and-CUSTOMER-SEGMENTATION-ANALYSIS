@@ -2,7 +2,7 @@
 
 ## 1. Medical Insurance
 
-To be financially stable is everyone’s dream. However, the rise in medical costs and treatment for illness can strain your savings. Health insurance helps lessen the costs of medical expenses in the event of an illness or accident and for preventive medicine such as routine medical tests, check-ups, and screening tests. Cashless treatment, Pre and post-hospitalization cost coverage, Transportation facility, No Claim Bonus (NCB), Medical checkups, Room rent, and Tax benefits are the main benefits. Health insurance is typically offered as one to three years  long contracts and required a renewal based on the chosen plan.
+To be financially stable is everyone’s dream. However, the rise in medical costs and treatment for illness can strain your savings. Health insurance helps lessen the costs of medical expenses in the event of an illness or accident and for preventive medicine such as routine medical tests, check-ups, and screening tests. Cashless treatment, Pre and post-hospitalization cost coverage, Transportation facility, No Claim Bonus (NCB), Medical checkups, Room rent, and Tax benefits are the main benefits. Health insurance is typically offered as one to three years  long contracts and requires a renewal based on the chosen plan.
 
 ## Objectives:
 1. The objective is to predict insurance policy renewals for existing customers using predictive modeling.
