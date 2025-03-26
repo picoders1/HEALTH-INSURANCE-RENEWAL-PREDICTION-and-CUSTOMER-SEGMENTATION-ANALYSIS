@@ -15,7 +15,7 @@ These are the Software, Tools, and Environments used in the project.
 
 HTML, CSS, JS: Cascading Style Sheets (CSS) are used for presenting documents written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 
-Flask: Flask helps end users interact with your Python code (in this case our ML models) directly from their web browser without needing any libraries, or code files.
+Flask: Flask helps end users interact with your Python code (in this case our ML models) directly from their web browser without needing any libraries or code files.
 
 Tableau: A tool we used for visualization.
 
