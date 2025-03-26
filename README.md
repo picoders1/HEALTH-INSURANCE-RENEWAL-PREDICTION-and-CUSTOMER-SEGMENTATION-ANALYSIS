@@ -91,7 +91,7 @@ Model Accuracy Measures :
 
 1. This project is an exploratory attempt to understand the factors that affect renewal decisions in the health insurance market.
 2. The prediction model helped us to figure out features that contributed more to the renewal of health insurance policies.
-3. Customer segmentation provided further insights into the business which would provide a targeted marketing  approach.
+3. Customer segmentation provided further insights into the business, which would provide a targeted marketing  approach.
 4. The results also suggest customer satisfaction is a significant factor in influencing the renewal decision of policyholders.
 
 
