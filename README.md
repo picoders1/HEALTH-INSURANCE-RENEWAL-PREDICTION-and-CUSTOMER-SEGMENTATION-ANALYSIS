@@ -6,7 +6,7 @@ To be financially stable is everyone’s dream. However, the rise in medical cos
 
 ## Objectives:
 1. The objective is to predict insurance policy renewals for existing customers using predictive modeling.
-2. To segment existing customers for better targeting through focused marketing strategies.
+2. Segment existing customers for better targeting through focused marketing strategies.
 
 
 ## 2. Technical Stacks
