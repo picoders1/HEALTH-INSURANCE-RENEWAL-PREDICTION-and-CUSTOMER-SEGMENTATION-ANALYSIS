@@ -21,7 +21,7 @@ Tableau: A tool we used for visualization.
 
 MySQL: A tool used for storing databases.
 
-Heroku: A tool used for Deploying the model.
+Heroku: A tool used to Deploy the model.
 
 
 ## 3. Project Architecture / Data Pipeline
