@@ -80,7 +80,7 @@ Model Accuracy Measures :
 1. Flask : 
 1. Flask is a micro-framework for building web applications in Python. It began as a simple wrapper around Wekzeug(WSGI protocol) and Jinja and has become    
    the most popular Python web application Framework.
-2. Flask and Green-unicorn module must be installed in the project environment using 'pip install flask gunicorn'.
+2. The Flask and Green-unicorn module must be installed in the project environment using 'pip install flask gunicorn'.
 3. Gunicorn is a Python WSGI HTTPS Server that uses a worker model.
 
 2. Heroku :
